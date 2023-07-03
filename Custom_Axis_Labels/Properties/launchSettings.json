@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Custom_Axis_Labels (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Custom_Axis_Labels (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
