@@ -17,22 +17,6 @@ namespace Custom_Axis_Labels
             this.InitializeComponent();
         }
 
-        private void CategoryAxis_LabelCreated(object sender, Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs e)
-        {
-            var axis = sender as CategoryAxis;
-            if (axis != null)
-            {
-                ViewModel viewModel = axis.DataContext as ViewModel;
-                if (viewModel != null)
-                {
-                    Model value = viewModel.Data[(int)e.Position];
-                    var label = ((value.Sales - value.Target) / value.Target);
-                    e.Label = e.Label + " => " + label.ToString("+#.00 %;-#.00 %;+0.00 %");
-                   
-                }
-            }
-        }
-
         private void NumericalAxis_LabelCreated(object sender, ChartAxisLabelEventArgs e)
         { 
             var axis = sender as NumericalAxis;

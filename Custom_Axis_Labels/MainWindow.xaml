@@ -10,38 +10,38 @@
     mc:Ignorable="d">
 
     <chart:SfCartesianChart Margin="10">
+        <chart:SfCartesianChart.DataContext>
+            <local:ViewModel x:Name="viewModel"/>
+        </chart:SfCartesianChart.DataContext>
         <chart:SfCartesianChart.Resources>
+            <local:AxisLabelConverter x:Key="axisLabel" />
             <DataTemplate x:Key="labelTemplate">
                 <Border BorderBrush="Gray"
 				CornerRadius="5"
 				BorderThickness="1">
-                    <TextBlock Text="{Binding Content}"
+                    <TextBlock Text="{Binding Converter={StaticResource axisLabel}}"
 					   FontSize="13"
 					   FontWeight="Medium" 
 					   Margin="2"/>
                 </Border>
             </DataTemplate>
         </chart:SfCartesianChart.Resources>
-        <chart:SfCartesianChart.DataContext>
-            <local:ViewModel/>
-        </chart:SfCartesianChart.DataContext>
-
         <chart:SfCartesianChart.Header>
-            <TextBlock Text="Analyze the profit and loss range with the target value" FontSize="25" FontWeight="SemiBold"  />
+            <TextBlock Text="Custom Axis Labels" FontSize="25" FontWeight="SemiBold"  />
         </chart:SfCartesianChart.Header>
 
         <chart:SfCartesianChart.XAxes>
             <chart:CategoryAxis LabelsIntersectAction="Auto" EdgeLabelsDrawingMode="Shift" 
-                                LabelTemplate="{StaticResource labelTemplate}" LabelCreated="CategoryAxis_LabelCreated"   >
+                                LabelTemplate="{StaticResource labelTemplate}"  >
                 <chart:CategoryAxis.LabelStyle>
                     <chart:LabelStyle FontSize="15"  />
                 </chart:CategoryAxis.LabelStyle>
             </chart:CategoryAxis>
         </chart:SfCartesianChart.XAxes>
         <chart:SfCartesianChart.YAxes>
-            <chart:NumericalAxis   LabelTemplate="{StaticResource labelTemplate}" Interval="200" 
+            <chart:NumericalAxis   Interval="200" 
                                    LabelCreated="NumericalAxis_LabelCreated" />
         </chart:SfCartesianChart.YAxes>
-        <chart:ColumnSeries Fill="Orange"  XBindingPath="Month" YBindingPath="Sales" ItemsSource="{Binding Data}" />
+        <chart:ColumnSeries Fill="Orange" XBindingPath="Month" YBindingPath="Sales" ItemsSource="{Binding Data}" />
     </chart:SfCartesianChart>
 </Window>
