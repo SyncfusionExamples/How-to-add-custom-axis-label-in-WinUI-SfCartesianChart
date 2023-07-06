@@ -2,7 +2,9 @@
 
 This article explains how to add custom axis labels in [WinUI (SfCartesianChart)](https://help.syncfusion.com/winui/cartesian-charts/getting-started).
 
-The [axis labels](https://help.syncfusion.com/winui/cartesian-charts/axis/axislabels) generated based on the range and data point values binding to the [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_XBindingPath) and [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_YBindingPath) properties of the Cartesian series.
+By customizing the axis labels in a chart, you can display more meaningful and descriptive text along the axes, thereby enhancing the representation of the chart data. The following steps demonstrate this process.
+
+**Step: 1**
 
 We can add the custom axis labels by utilizing the [LabelTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelTemplate) property with the help of a Converter, as shown in the following code snippet.
 
@@ -61,6 +63,8 @@ public class AxisLabelConverter : IValueConverter
     }
 
 ```
+
+**Step: 2**
 
 Additionally, we can add the custom axis label by utilizing the LabelCreated event and the properties of [ChartAxisLabelEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html), as demonstrated in the provided code snippet.
 
