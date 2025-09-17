@@ -8,15 +8,15 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="fd9956ee-989a-445c-a211-411eda0e8324"
-    Publisher="CN=NanthiniMahalingam"
+    Name="eb3dc10c-a165-4eac-aad3-7e609f1275fc"
+    Publisher="CN=HarshaMidadh_xkvon6h"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="fd9956ee-989a-445c-a211-411eda0e8324" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="eb3dc10c-a165-4eac-aad3-7e609f1275fc" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>Custom_Axis_Labels</DisplayName>
-    <PublisherDisplayName>NanthiniMahalingam</PublisherDisplayName>
+    <PublisherDisplayName>HarshaMidadh_xkvon6h</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 

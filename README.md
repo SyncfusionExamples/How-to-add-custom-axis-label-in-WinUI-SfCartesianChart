@@ -127,9 +127,9 @@ Customize the axis label using the [LabelCreated](https://help.syncfusion.com/cr
 
  ```
 
-[Download the complete sample in GitHub](https://github.com/SyncfusionExamples/How-to-add-custom-axis-label-in-WinUI-SfCartesianChart).
-
 **Output:**
 
   
  ![CustomAxisLabels.png](https://support.syncfusion.com/kb/agent/attachment/article/13013/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjgwNjEiLCJvcmdpZCI6IjMiLCJpc3MiOiJzdXBwb3J0LnN5bmNmdXNpb24uY29tIn0.BYYpOdxW4g9OVM2RQRXTaCwarfTsG-5sMozYW78WFA8)
+
+ KB link - [How-to-add-custom-axis-label-in-WinUI-SfCartesianChart](https://support.syncfusion.com/kb/article/13013/how-to-customize-the-axis-labels-of-winui-chart-sfcartesianchart).
